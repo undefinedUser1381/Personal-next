@@ -1,18 +1,17 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-} */
-
-@theme inline {
-  
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../../public/fonts/CascadiaCode-Medium.ttf") format("truetype");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --font-cascadia: "Cascadia Code";
+  /* dark colors */
+  --color-primaryDark : #64E2B7;
+  --color-darkText : #607B96;
+  --color-bgDark : #011627;
+  /* ligth colors */
+  --color-primaryLight : #3A59D1;
 }

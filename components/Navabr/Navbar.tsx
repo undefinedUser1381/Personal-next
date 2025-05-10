@@ -1,0 +1,23 @@
+"use client"
+import { motion } from "framer-motion";
+import RightNavbar from "./RightNavbar/RightNavbar";
+import LeftNavbar from "./LeftNavbar/LeftNavbar";
+
+function Navbar() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+      <header className="bg-white border-b border-b-gray-700 dark:bg-[#011627]">
+        <div className="lg:container p-3 lg:mx-auto flex w-full items-center justify-between lg:px-16">
+          <LeftNavbar />
+          <RightNavbar />
+        </div>
+      </header>
+    </motion.div>
+  );
+}
+
+export default Navbar;

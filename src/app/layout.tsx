@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import ThemeProvider from "../../components/ThemeProvider/ThemeProvider";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "سلام من عرفان هستم !",
-  description: "به وبسایت من خوش امدید",
+  title: "Erfan Ghezi || Front-End Dev",
+  description: "Welcome to my portfolio",
 };
 
 export default function RootLayout({
@@ -12,9 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="dark">
-      <body className="">
-        {children}
+    <html lang="en" suppressHydrationWarning className="font-cascadia">
+      <body className="bg-white dark:bg-bgDark">
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

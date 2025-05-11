@@ -2,7 +2,11 @@
 import Link from "next/link";
 import { FaBars } from "react-icons/fa6";
 
-function RightNavbar() {
+interface NavbarProps {
+  onOpen : () => void
+}
+
+function RightNavbar({onOpen} : NavbarProps) {
   return (
     <>
       <nav className="hidden md:block md:w-[40%] lg:w-[35%] ">
@@ -15,7 +19,7 @@ function RightNavbar() {
           </Link>
         </ul>
       </nav>
-      <div className="flex items-center justify-center w-[2rem] h-[1.5rem] cursor-pointer md:hidden">
+      <div onClick={onOpen} className="flex items-center justify-center w-[2rem] h-[1.5rem] cursor-pointer md:hidden">
         <FaBars className="w-[100%] h-[100%] text-primaryLight dark:text-primaryDark"/>
       </div>
     </>

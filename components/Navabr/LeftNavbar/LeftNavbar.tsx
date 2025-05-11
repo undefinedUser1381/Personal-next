@@ -10,7 +10,7 @@ function LeftNavbar() {
         <line x1="60" y1="15" x2="60" y2="85" stroke="#007BFF" strokeWidth="6" className="stroke-primaryLight dark:stroke-primaryDark" transform="rotate(10 60 50)"/>
       </svg>
      </div>
-      <h3 className="text-primaryLight dark:text-primaryDark">Seyed Erfan Ghezi</h3>
+      <h3 className="text-primaryLight dark:text-primaryDark">Erfan Ghezi</h3>
     </div>
     
   )

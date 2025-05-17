@@ -12,8 +12,8 @@ function RightNavbar({onOpen} : NavbarProps) {
       <nav className="hidden md:block md:w-[40%] lg:w-[35%] ">
         <ul className="flex text-black *:hover:text-primaryLight *:dark:text-darkText *:dark:hover:text-primaryDark *:cursor-pointer *:transition-all *:duration-150 items-center gap-2.5 justify-between">
           <Link href={"tel:9233246491"}>contact me</Link>
-          <li>projects</li>
-          <li>home</li>
+          <li><a href={"#projects"}>projects</a></li>
+          <li><a href="#skills">skills</a></li>
           <Link target="_blank" href={"https://github.com/undefinedUser1381"}>
             github
           </Link>

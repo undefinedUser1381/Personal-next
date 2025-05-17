@@ -6,6 +6,20 @@
   src: url("../../public/fonts/CascadiaCode-Medium.ttf") format("truetype");
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+@layer utilities{
+  .title-section {
+    @apply text-primaryLight font-bold text-[1.4rem] dark:text-primaryDark;
+  }
+}
+
 @theme {
   /* font */
   --font-cascadia: "Cascadia Code";
@@ -15,4 +29,6 @@
   --color-bgDark : #011627;
   /* ligth colors */
   --color-primaryLight : #3A59D1;
+  --color-customCartDark : #05253d;
+  --color-customCartlight : #e5e7eb;
 }

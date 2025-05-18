@@ -1,5 +1,8 @@
-import BackgroundBubble from "../../components/Introduction/BackgroundBubble/BackgroundBubble";
+import ContactMe from "../../components/ContactMe/ContactMe";
+import Footer from "../../components/Footer/Footer";
+import BackgroundBubble from "../../components/BackgroundBubble/BackgroundBubble"
 import Introduction from "../../components/Introduction/Introduction";
+import MyServices from "../../components/MyServices/MyServices";
 import Navbar from "../../components/Navabr/Navbar";
 import Projects from "../../components/Projects/Projects";
 import Skills from "../../components/Skills/Skills";
@@ -14,24 +17,10 @@ export default function Home() {
         <BackgroundBubble />
         <Skills />
         <Projects />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <MyServices />
+        <ContactMe />
       </main>
+      <Footer />
       <ThemeSwitcherContainer />
     </>
   );

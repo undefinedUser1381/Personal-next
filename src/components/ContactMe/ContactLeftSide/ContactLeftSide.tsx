@@ -10,7 +10,7 @@ export default function ContactLeftSide() {
       <div className="w-full">
         <h4 className="text-darkText text-2xl mb-2.5">Get In Touch</h4>
         <span className="dark:text-primaryDark text-primaryLight">
-          Im eager to collobrate with you. Let's talk.
+          Im eager to collobrate with you. Lets talk.
         </span>
       </div>
       <div className="flex items-center *:text-2xl justify-center gap-10 xl:gap-16 text-darkText *:transition-all *:duration-200 *:hover:text-primaryLight *:cursor-pointer w-[100%]">

@@ -12,7 +12,7 @@ export default function RightIntroduction() {
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="flex w-[90%] sm:w-[9s0%] lg:w-[50%] xl:w-[40%] flex-col gap-6"
     >
-      <h4 className="font-bold text-[1.2rem] sm:text-[1.4rem]">Hey 👋! I'm Seyed Erfan Ghezi</h4>
+      <h4 className="font-bold text-[1.2rem] sm:text-[1.4rem]">Hey 👋! Im Seyed Erfan Ghezi</h4>
       <h5 className="font-bold text-[1.2rem] sm:text-[1.4rem]">
         <span className="text-primaryDark">Next js | React js </span>Developer
       </h5>

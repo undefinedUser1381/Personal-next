@@ -13,7 +13,7 @@ interface ProjectBoxProps {
   imageSrc: string;
 }
 
-export default function ProjectBox({id,desc,gitHubLink,imageSrc,liveLink,technologies,title} : ProjectBoxProps) {
+export default function ProjectBox({desc,gitHubLink,imageSrc,liveLink,technologies,title} : ProjectBoxProps) {
   return (
   <div className="w-full lg:w-[49%] dark:bg-customCartDark p-4 h-auto rounded-xl bg-customCartlight lg:h-[24rem] xl:h-[22rem]">
     <div className="flex items-center justify-between">

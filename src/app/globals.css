@@ -6,17 +6,29 @@
   src: url("../../public/fonts/CascadiaCode-Medium.ttf") format("truetype");
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
-@layer utilities{
+@layer base {
   .title-section {
     @apply text-primaryLight font-bold text-[1.4rem] dark:text-primaryDark;
+  }
+  .section-container {
+    @apply mt-[4rem] lg:mt-[5rem] px-2.5;
+  }
+  .section-title__box {
+    @apply flex items-center justify-start gap-2;
+  }
+  .carts-container{
+    @apply flex flex-col lg:flex-row flex-wrap items-start gap-y-6 mt-10 justify-between w-full
+  }
+  .contact-input{
+    @apply transition-all duration-200 outline-none dark:focus:border-primaryDark focus:border-primaryLight border-1 border-gray-600 p-2
   }
 }
 
@@ -24,11 +36,11 @@ body{
   /* font */
   --font-cascadia: "Cascadia Code";
   /* dark colors */
-  --color-primaryDark : #64E2B7;
-  --color-darkText : #607B96;
-  --color-bgDark : #011627;
+  --color-primaryDark: #64e2b7;
+  --color-darkText: #607b96;
+  --color-bgDark: #011627;
   /* ligth colors */
-  --color-primaryLight : #3A59D1;
-  --color-customCartDark : #05253d;
-  --color-customCartlight : #e5e7eb;
+  --color-primaryLight: #3a59d1;
+  --color-customCartDark: #05253d;
+  --color-customCartlight: #e5e7eb;
 }

@@ -11,12 +11,14 @@ function RightNavbar({onOpen} : NavbarProps) {
     <>
       <nav className="hidden md:block md:w-[40%] lg:w-[35%] ">
         <ul className="flex text-black *:hover:text-primaryLight *:dark:text-darkText *:dark:hover:text-primaryDark *:cursor-pointer *:transition-all *:duration-150 items-center gap-2.5 justify-between">
-          <Link href={"tel:9233246491"}>contact me</Link>
-          <li><a href={"#projects"}>projects</a></li>
+          <li><a href="#contactme"></a>contact me</li>
+          <li><a href="#projects">projects</a></li>
           <li><a href="#skills">skills</a></li>
+          <li>
           <Link target="_blank" href={"https://github.com/undefinedUser1381"}>
             github
           </Link>
+          </li>
         </ul>
       </nav>
       <div onClick={onOpen} className="flex items-center justify-center w-[2rem] h-[1.5rem] cursor-pointer md:hidden">

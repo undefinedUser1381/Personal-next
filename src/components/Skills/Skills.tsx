@@ -22,7 +22,7 @@ export default function Skills() {
          </svg>
         <h4 className='title-section'>Skills</h4>
        </div>
-       <div className='flex items-center mt-12 justify-start flex-wrap gap-10 xl:gap-9'>
+       <div className='flex items-center mt-12 justify-start flex-wrap gap-10 xl:gap-9 xl:w-full'>
          {
             skills.map((skill) => (
                 <SkillsBox key={skill.id} {...skill}/>

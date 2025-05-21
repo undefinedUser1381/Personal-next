@@ -13,7 +13,7 @@ interface SkillProps {
 export default function SkillsBox({skillRate, src, title}: SkillProps) {
 
   return (
-    <div className="w-full gap-5.5 rounded-xl flex dark:bg-customCartDark bg-customCartlight items-center justify-start md:w-[47%] lg:w-[30%] xl:w-[16rem] md:h-[7rem] md:justify-center px-3.5 h-[6rem]">
+    <div className="w-full gap-5.5 rounded-xl flex dark:bg-customCartDark bg-customCartlight items-center justify-start md:w-[47%] lg:w-[30%] xl:w-[19.5rem] md:h-[7rem] md:justify-center px-3.5 h-[6rem]">
       <div>
         <Image width={50} height={50} src={src} alt={title} />
       </div>

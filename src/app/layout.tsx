@@ -1,4 +1,4 @@
-import "./globals.css"
+import "./globals.css";
 import ThemeProvider from "../components/ThemeProvider/ThemeProvider";
 import type { Metadata } from "next";
 
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/images/fav/Code.png",
   },
-  metadataBase: new URL("https://personal-next-ten.vercel.app"), 
+  metadataBase: new URL("https://personal-next-ten.vercel.app"),
   openGraph: {
     title: "Erfan Ghezi | Front-End Developer",
     description:
@@ -31,7 +31,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -39,6 +38,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className="font-cascadia">
+      <head>
+       <meta name="google-site-verification" content="uJaqpm057RROXTwTZm3xJ8kLY8fAVRhCKCxiKC79g0M" />
+      </head>
       <body className="bg-white dark:bg-bgDark">
         <ThemeProvider>{children}</ThemeProvider>
       </body>

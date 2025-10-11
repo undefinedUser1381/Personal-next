@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://personal-next-ten.vercel.app
+
+# Sitemaps
+Sitemap: https://personal-next-ten.vercel.app/sitemap.xml

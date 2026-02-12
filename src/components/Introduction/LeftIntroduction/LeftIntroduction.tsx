@@ -12,7 +12,7 @@ export default function LeftIntroduction() {
     >
       <img
         className="object-cover w-full h-full"
-        src="/images/me.jpg"
+        src="/images/rec.jpg"
         alt="Picture of developer"
       />
     </motion.div>
